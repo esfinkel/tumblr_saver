@@ -1,0 +1,37 @@
+Designed for Mac with Safari or Chrome, and Python 3.x. Safari version is less buggy, but slower in my experience.
+
+
+
+
+How to run:
+
+Open the application "Terminal" (search for it via spotlight or finder). Terminal lets you run other applications, such as tumblr_saver.py.
+
+Type "python " into terminal (with the space but without quotes)
+Either copy your file and paste it into terminal, or drag and drop. Terminal will now display something like "python Location/Of/File/tumblr_saver.py"
+If you know what terminal arguments are, enter them (listed in section below). If you don't know what that is: don't worry about it.
+Press ENTER. If prompted for any information, answer then press ENTER.
+
+A browser window will pop up. Wait for program to end. You can leave this running in the background - just don't touch the browser window (unless it asks for permission or something).
+
+
+
+To quit prematurely:
+Go to terminal; control c usually works
+
+
+
+Requirements/troubleshooting:
+
+-You must have selenium installed
+	-if you don't, or aren't sure, open a separate terminal window and type "pip install selenium", then press ENTER
+-To use Chrome, you must leave the "chromedriver" file in the same folder as this program. You may need to redownload chromedriver from https://sites.google.com/a/chromium.org/chromedriver/home
+-To use Safari, you must enable the 'Allow Remote Automation' option in Safari's Develop menu. If you're paranoid like me, remember to disable remote automation once the program is done.
+-You may need to install some additional python packages, depending on whether you already have them. If you receive an error saying you don't have a particular one, try typing "pip install PACKAGE_NAME" into terminal (and pressing enter). If you receive an error saying you don't have python installed, go to https://www.python.org/downloads/mac-osx/ and install the latest version.
+
+
+
+
+Arguments:
+First argument: blog name (which appears in its url)
+Optional second: int N, where you want only the first N pages saved
